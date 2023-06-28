@@ -1,0 +1,136 @@
+
+
+.Home {
+    margin-top: 100px;
+}
+
+.Service {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: url(../Images/ink.png);
+    background-size: cover;
+}
+
+
+.service-1{
+    width: 18%;
+    box-shadow: 1px 1px 3px 0px grey;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: .7s;
+    margin-bottom: 40px;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Fredoka", sans-serif;
+}
+
+.service-1:hover{
+    transform: scale(1.08);
+    background-color: skyblue;
+    box-shadow: 0px 0px 4px 0px skyblue;
+}
+
+.service-1 h3 {
+    color: navy;
+}
+
+.service-1 img {
+    width: 100%;
+}
+
+.Advert {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5vw;
+    margin-top: 70px;
+    font-family: "Fredoka", sans-serif;
+}
+
+.advert-1{
+    width: 35%;
+    transition: .8s;
+}
+
+.advert-1 img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.advert-2{
+    width: 60%;
+}
+
+.advert-2 h2{
+    color: navy;
+    font-size: var(--h2-font);
+}
+
+.advert-2 p{
+    font-size: var(--p-font);
+}
+
+.advert-2 button {
+        color: white;
+        background-color: var(--primary);
+        font-weight: 700;
+        padding: 8px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: var(--p-font);
+        transition: .5s;
+        cursor: pointer;
+        margin: 20px 0;
+        font-family: "Fredoka", sans-serif;
+    
+    }
+    
+    .advert-2 button:hover {
+        background-color: var(--secondary);
+    }
+
+
+
+@media (max-width: 780px) {
+
+    .service-1 img {
+        width: 100px;
+    }
+
+    .service-1 {
+        width: 40%;
+
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .service-1 img {
+        width: 100px;
+    }
+
+    .service-1 {
+        width: 80%;
+
+    }
+
+    .Advert {
+        flex-wrap: wrap;
+    }
+    
+    .advert-1{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .advert-2{
+        width: 100%;
+    }
+    
+}

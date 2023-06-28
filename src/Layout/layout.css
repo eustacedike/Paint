@@ -1,43 +1,91 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Kanit:wght@400;500;600;700;800&family=Montserrat+Subrayada&family=Nunito:wght@300;500;600;700;800&family=Poppins:wght@300;500;600;700;800&family=Prosto+One&family=Righteous&family=Roboto:wght@500;700;900&display=swap');
 
 
 
 .Header {
-    background-color: orange;
+    /* background-color: orange; */
     height: 600px;
     padding-top: 30px;
+
+    background: url(../Images/colors.png), var(--primary);
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
+
+.mobile {
+    background-color: rgba(0,0,0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+
+    padding-top: 20px;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    transition: .7s;
+    /* transform: translateX(-100%); */
+}
+
+.close {
+    color: var(--secondary);
+    text-align: right;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.mobile li {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.mobile button {
+    display: none;
+}
+
 
 .big-head {
     display: flex;
     justify-content: center;
     margin: 25px auto;
+    animation: zoomInDown 2s ease-in-out;
 }
 
 header {
     background-color: white;
-    padding: 2px 15px;
+    padding: 20px 15px;
     /* margin: 25px auto; */
     width: 70%;
     display: flex;
     justify-content: space-between;
     align-content: center;
+    /* align-items: baseline; */
     color: navy;
+    font-family: "Fredoka", sans-serif;
 }
 
-.reverse-edge {
+.logo {
+    /* width: 12vw;
+    height: 3.5vw; */
+}
+
+/* .reverse-edge {
     transform: scale(-1,1);
     -webkit-transform: scale(-1,1);
     transform: scale(-1,1);
     transform: scale(-1,1);
     transform: scale(-1,1);
-}
+} */
 
 nav {
     width: 75%;
-    padding-top: 16px;
+    padding-top: 5px;
     /* border: 2px solid red; */
 }
 
@@ -50,6 +98,7 @@ nav ul {
 nav li {
     display: inline;
     /* vertical-align: 100px; */
+    padding-top: 5px;
 }
 
 nav .link {
@@ -57,13 +106,14 @@ nav .link {
     transition: .5s;
 }
 
-nav .link:hover {
-    color: #f52a85;
+nav .link:hover, .mobile .link:hover {
+    color: var(--secondary);
+    transition: .5s;
 }
 
-nav button {
+nav button, .mobile button {
     color: white;
-    background-color: #f52a85;
+    background-color: var(--secondary);
     font-weight: 700;
     padding: 8px 20px;
     border: none;
@@ -71,8 +121,174 @@ nav button {
     font-size: 1.2vw;
     transition: .5s;
     cursor: pointer;
+
+    font-family: "Fredoka", sans-serif;
+
 }
 
-nav button:hover {
-    background-color: orange;
+nav button:hover, .mobile button:hover {
+    background-color: var(--primary);
+}
+
+.grid {
+    display: none;
+    padding: 8px 10px;
+}
+
+.outer-banner {
+    display: flex;
+    justify-content: right;
+    padding: 0 4vw;
+    margin-top: 120px;
+    /* border: 1px solid red; */
+    height: 340px;
+    animation: zoomOut 1s 2s backwards;
+    transform-origin: right;
+}
+
+.banner {
+    background-color: white;
+    padding: 20px;
+    font-family: "Fredoka", sans-serif;
+    width: 450px;
+    /* height: fit-content; */
+
+}
+
+.banner h2 {
+    color: navy;
+}
+
+.banner button {
+    color: white;
+    background-color: var(--primary);
+    font-weight: 700;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--p-font);
+    transition: .5s;
+    cursor: pointer;
+    margin: 20px 0;
+    font-family: "Fredoka", sans-serif;
+
+}
+
+.banner button:hover {
+    background-color: navy;
+}
+
+@media (max-width: 1000px) {
+
+    .logo {
+        width: 120px;
+        height: 31px;
+        padding-top: 4px;
+    }
+}
+
+@media (max-width: 780px) {
+    nav ul {
+        justify-content: right;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    .grid {
+        display: block;
+        margin-right: 20px;
+    }
+
+    nav button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    header {
+        padding: 12px 1px;
+        width: 94%;
+    }
+
+    .logo {
+        width: 110px;
+        height: 28px;
+        padding-top: 9px;
+    }
+
+    .grid {
+        margin-right: 0px;
+    }
+
+    .quote {
+        display: none;
+    }
+
+    .mobile button {
+        display: inline;
+        font-size: 16px;
+    }
+
+    .outer-banner {
+        margin-top: 90px;
+        font-size: smaller;
+        /* height: 3; */
+        padding: 0px;
+        width: 100%;
+        /* height: fit-content; */
+
+    }
+
+    .banner button {
+
+        font-size: 16px;
+
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    .outer-banner {
+        height: 370px;
+    }
+}
+
+
+@keyframes zoomInDown {
+    0% {
+
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0)
+    }
+
+    20% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0)
+    }
+
+    70% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0)
+    }
+}
+
+
+@keyframes zoomOut {
+    from {
+
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }

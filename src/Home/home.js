@@ -1,13 +1,17 @@
 
 
 import './home.css';
+import Service from './service';
+import Advert from './advert';
 
 
 
 function Home() {
   return (
     <div className="Home">
-      Hello Home
+      
+      <Service/>
+      <Advert/>
     </div>
   );
 }

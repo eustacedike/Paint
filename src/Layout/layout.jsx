@@ -9,7 +9,7 @@ import Footer from "./footer";
 function Layout() {
   return (
     <div className="Layout">
-        Hello layout
+      
       <Header/>
       <Outlet />
       
