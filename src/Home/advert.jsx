@@ -27,9 +27,9 @@ function Advert() {
             magic.current.style.opacity = "0";
         }
 
-        console.log(window.innerHeight);
-        console.log(window.pageYOffset);
-        console.log(magic.current.offsetTop);
+        // console.log(window.innerHeight);
+        // console.log(window.pageYOffset);
+        // console.log(magic.current.offsetTop);
     }
     )
 

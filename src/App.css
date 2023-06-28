@@ -1,4 +1,10 @@
 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Kanit:wght@400;500;600;700;800&family=Montserrat+Subrayada&family=Nunito:wght@300;500;600;700;800&family=Poppins:wght@300;500;600;700;800&family=Prosto+One&family=Righteous&family=Roboto:wght@500;700;900&display=swap');
+
+
 :root {
   --primary: orange;
   --secondary: rgb(245, 42, 133);
@@ -21,7 +27,7 @@
   --h4-font: ;
   --h4-line: ;
   
-  --p-font: clamp(14px,2vw,28px);
+  --p-font: clamp(14px,2vw,22px);
   --p-line: clamp(20px,3vw,36px);
   
   --card-h-font: clamp(16px,2vw,24px);
@@ -34,7 +40,7 @@
 }
 
 .App {
-  /* font-family: 'Nunito', sans-serif; */
+  font-family: "Fredoka", sans-serif;
 }
 
 * {

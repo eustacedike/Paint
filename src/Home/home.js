@@ -3,6 +3,8 @@
 import './home.css';
 import Service from './service';
 import Advert from './advert';
+import Benefits from './benefits';
+import Events from './events';
 
 
 
@@ -12,6 +14,8 @@ function Home() {
       
       <Service/>
       <Advert/>
+      <Benefits/>
+      <Events/>
     </div>
   );
 }
