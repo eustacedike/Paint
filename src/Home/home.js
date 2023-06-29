@@ -5,6 +5,7 @@ import Service from './service';
 import Advert from './advert';
 import Benefits from './benefits';
 import Events from './events';
+import Gallery from './gallery';
 
 
 
@@ -16,6 +17,7 @@ function Home() {
       <Advert/>
       <Benefits/>
       <Events/>
+      <Gallery/>
     </div>
   );
 }

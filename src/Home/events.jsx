@@ -1,6 +1,6 @@
 
 
-// import { useRef } from 'react';
+import { useRef } from 'react';
 
 
 import './home.css';
@@ -20,10 +20,7 @@ function Events() {
 
 
 
-    // const serve1 = useRef();
-    // const serve2 = useRef();
-    // const serve3 = useRef();
-    // const serve4 = useRef();
+    const eventTwo = useRef();
 
     const comingEvents = [
         { title: "Paint-A-Thon", image: room, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
@@ -33,6 +30,18 @@ function Events() {
 
     ]
 
+
+    // window.addEventListener('scroll', ()=>{
+    //     if ((window.innerHeight + window.pageYOffset) > (eventTwo.current.offsetTop+160)) {
+    //         serve1.current.style.transform = "scale(1)";
+    //         serve1.current.style.transform = "translateY(0%)";
+    //         serve1.current.style.opacity = "1";
+    //     } else {
+    //         serve1.current.style.transform = "scale(0)";
+    //         serve1.current.style.transform = "translateY(-100%)";
+    //         serve1.current.style.opacity = "0";
+    //     }
+    // })
 
 
 
@@ -44,7 +53,7 @@ function Events() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, at sapiente. Aliquam praesentium natus amet quod rerum mollitia ullam quo?</p>
             </div>
 
-            <div className="events-2">
+            <div className="events-2" ref={eventTwo}>
 
                 {
                     comingEvents.map(upcoming => {
