@@ -228,15 +228,22 @@
 
 .Gallery {
     display: flex;
-    padding: 4vw;
-    background-color: rgb(245, 42, 133, 0.55);
-    background-size: contain;
+    padding: 80px 0;
+    background: url(../Images/roller.png), url(../Images/roller.png);
+  background-repeat: no-repeat;
+    background-size: 170% auto;
+    background-position: 50% -2vw, 50% 450px;
+    /* background-color: rgb(245, 42, 133, 0.55); */
+    /* background-size: contain; */
     margin-top: 40px;
-
+/* border: 1px solid red; */
 }
 
 .gallery-1 {
     width: 50%;
+    background-color: #3986C4;
+    /* border: 1px solid red; */
+    padding-left: 4vw;
 }
 
 /* #maxi {
@@ -254,10 +261,12 @@
 .gallery-2 {
     /* background: url(../Images/pinksplash.png); */
     /* height: 400px; */
-    background: url(../Images/bird.png);
-
+    /* background: url(../Images/bird.png); */
+    background-color: #3986C4;
+    /* border: 1px solid red; */
+    padding-right: 4vw;
     width: 50%;
-    background-size: cover;
+    /* background-size: cover; */
     padding: 0 50px;
     color: white;
     font-size: var(--p-font);
@@ -265,19 +274,32 @@
 }
 
 .gallery-2 h1 {
-    color: navy;
+    color: var(--primary);
     font-size: var(--h1-font);
+    margin-bottom: 8px;
 }
 
 .Subscribe {
-    background: url(../Images/roller.png);
-    padding: 60px 1vw;
-    /* height: 80px; */
-    background-size: 150% 100%;
-    background-position: 50% ;
-    max-width: 1200px;
+    background: linear-gradient(rgb(0,0,0,0.15),rgb(0,0,0,0.15)),url(../Images/bus.png);
+    /* padding: 60px 1vw; */
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* max-width: 1200px; */
     margin: 60px auto;
     text-align: center;
+    justify-content: center;
+display: flex;
+flex-direction: column;
+color: white;
+}
+
+.Subscribe div {
+    background-color: rgb(0,0,0,0.8);
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: 0 auto;
 }
 
 .Subscribe form {
@@ -285,8 +307,7 @@
     width: 90%;
     max-width: 700px;
     margin: 0 auto;
-    height: 100%;
-    align-items: center;
+    /* height: 100%; */
     justify-content: center;
     /* border: 2px solid red; */
 }
@@ -341,19 +362,21 @@
 
     .Gallery {
         display: flex;
-        padding: 4vw;
-        background-color: rgb(245, 42, 133, 0.15);
+        padding: 50px 0;
         flex-wrap: wrap-reverse;
+        background-position: 50% -2vw, 50% bottom;
+        
     }
     
     .gallery-1 {
         width: 100%;
+        padding: 0 0;
     }
     
     .gallery-2 {
         width: 100%;
-        padding: 0;
-        margin-bottom: 20px;
+        padding: 0 4vw;
+        padding-bottom: 20px;
     }
         
 }
@@ -426,6 +449,19 @@
            
     }
     
+}
+
+@media (min-width: 1173px) {
+    .Gallery {
+        background-position: 50% -2vw, 50% 390px;
+        
+    }
+}
+@media (min-width: 1388px) {
+    .Gallery {
+        background-position: 50% -2vw, 50% 350px;
+        
+    }
 }
 
 @keyframes outing {
