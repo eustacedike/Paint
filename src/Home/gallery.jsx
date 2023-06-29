@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
@@ -19,38 +19,47 @@ function Gallery() {
 
 
 
-const galleryPics = [
-    {image: gall1, legend: "Lgend 1"},
-    {image: gall2, legend: "Lgend 1"},
-    {image: gall3, legend: "Lgend 1"},
-    {image: gall4, legend: "Lgend 1"},
-    {image: gall5, legend: "Lgend 1"},
-    {image: gall6, legend: "Lgend 1"},
-]
+    const galleryPics = [
+        { image: gall1, legend: "Lgend 1" },
+        { image: gall2, legend: "Lgend 1" },
+        { image: gall3, legend: "Lgend 1" },
+        { image: gall4, legend: "Lgend 1" },
+        { image: gall5, legend: "Lgend 1" },
+        { image: gall6, legend: "Lgend 1" },
+    ]
 
 
     return (
-      <div className="Gallery">
-  
-            <Carousel>
+        <div className="Gallery">
 
-            {
+<div className="gallery-1">
+
+            <Carousel id="maxi">
+
+                {
                     galleryPics.map(photo => {
                         return (
-                            <div>
-                            <img src={photo.image} />
-                            <p className="legend">{photo.legend}</p>
-                        </div>
+                            <div id='max'>
+                                <img src={photo.image} id='mini' />
+                                <p className="legend">{photo.legend}</p>
+                            </div>
                         )
                     })
                 }
 
-               
+
             </Carousel>
-            </div>
+            
+</div>
+<div className="gallery-2">
+    <h1>OUR GALLERY</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto est laudantium aliquid ut ipsum quam obcaecati illo blanditiis beatae.</p>
+    {/* <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, nesciunt magni? Quibusdam ex maxime quam iste accusamus laudantium odit? Explicabo!</p> */}
+</div>
+        </div>
     );
-  }
-  export default Gallery;
+}
+export default Gallery;
 
 // Don't forget to include the css in your page
 

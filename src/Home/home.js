@@ -6,6 +6,7 @@ import Advert from './advert';
 import Benefits from './benefits';
 import Events from './events';
 import Gallery from './gallery';
+import Subscribe from './subscribe';
 
 
 
@@ -18,6 +19,7 @@ function Home() {
       <Benefits/>
       <Events/>
       <Gallery/>
+      <Subscribe/>
     </div>
   );
 }

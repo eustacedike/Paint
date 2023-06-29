@@ -169,7 +169,21 @@
     overflow-y: hidden;
     transition: 0.5s;
     cursor: pointer;
+
 }
+
+.animated div:nth-child(1) {
+    animation: outing .7s backwards ease-in-out;
+   }
+.animated div:nth-child(2) {
+    animation: outing .7s .7s backwards ease-in-out;
+   }
+.animated div:nth-child(3) {
+    animation: outing .7s 1.4s backwards ease-in-out;
+   }
+.animated div:nth-child(4) {
+    animation: outing .7s 2.1s backwards ease-in-out;
+   }
 
 .events-2 div:nth-child(1) {
     margin-top: 25px;
@@ -212,6 +226,93 @@
         font-family: "Fredoka", sans-serif;
 }
 
+.Gallery {
+    display: flex;
+    padding: 4vw;
+    background-color: rgb(245, 42, 133, 0.55);
+    background-size: contain;
+    margin-top: 40px;
+
+}
+
+.gallery-1 {
+    width: 50%;
+}
+
+/* #maxi {
+    max-width: 400px;
+    border: 2px solid red;
+} */
+
+#mini {
+    /* max-width: 200px; */
+    max-height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.gallery-2 {
+    /* background: url(../Images/pinksplash.png); */
+    /* height: 400px; */
+    background: url(../Images/bird.png);
+
+    width: 50%;
+    background-size: cover;
+    padding: 0 50px;
+    color: white;
+    font-size: var(--p-font);
+    line-height: var(--p-line);
+}
+
+.gallery-2 h1 {
+    color: navy;
+    font-size: var(--h1-font);
+}
+
+.Subscribe {
+    background: url(../Images/roller.png);
+    padding: 60px 1vw;
+    /* height: 80px; */
+    background-size: 150% 100%;
+    background-position: 50% ;
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.Subscribe form {
+    display: flex;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.Subscribe input {
+    background-color: white;
+    padding: 7.5px 5px;
+    font-size: 18px;
+    width: 80%;
+    border-radius: 3px 0 0 3px;
+    border: none;
+}
+
+.Subscribe button {
+    color: white;
+        background-color: var(--secondary);
+        font-weight: 700;
+        padding: 7px 20px;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        font-size: 18px;
+        transition: .5s;
+        cursor: pointer;
+        /* margin: 20px 0; */
+        font-family: "Fredoka", sans-serif;
+}
 
 @media (max-width: 780px) {
 
@@ -237,6 +338,24 @@
     .events-2 {
         width: 100%;
     }
+
+    .Gallery {
+        display: flex;
+        padding: 4vw;
+        background-color: rgb(245, 42, 133, 0.15);
+        flex-wrap: wrap-reverse;
+    }
+    
+    .gallery-1 {
+        width: 100%;
+    }
+    
+    .gallery-2 {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+        
 }
 
 @media (max-width: 540px) {
@@ -284,4 +403,32 @@
         margin-top: 0px;
         margin-left: 20vw;
     }
+
+    
+    
+
+    .Subscribe form {
+        width: 93%;
+        /* height: 100%; */
+        /* border: 2px solid red; */
+    }
+    
+    .Subscribe input {
+        padding: 4px 2px;
+        font-size: 12px;
+        /* width: 80%; */
+    }
+    
+    .Subscribe button {
+        
+            padding: 4px 10px;
+            font-size: 12px;
+           
+    }
+    
+}
+
+@keyframes outing {
+ from {transform: scale(0);}
+ to {transform: scale(1);}   
 }

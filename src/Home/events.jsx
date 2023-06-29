@@ -20,6 +20,7 @@ function Events() {
 
 
 
+    const eventOne = useRef();
     const eventTwo = useRef();
 
     const comingEvents = [
@@ -31,23 +32,20 @@ function Events() {
     ]
 
 
-    // window.addEventListener('scroll', ()=>{
-    //     if ((window.innerHeight + window.pageYOffset) > (eventTwo.current.offsetTop+160)) {
-    //         serve1.current.style.transform = "scale(1)";
-    //         serve1.current.style.transform = "translateY(0%)";
-    //         serve1.current.style.opacity = "1";
-    //     } else {
-    //         serve1.current.style.transform = "scale(0)";
-    //         serve1.current.style.transform = "translateY(-100%)";
-    //         serve1.current.style.opacity = "0";
-    //     }
-    // })
+    window.addEventListener('scroll', ()=>{
+        if ((window.innerHeight + window.pageYOffset) > (eventTwo.current.offsetTop+160)) {
+            eventTwo.current.classList.add("animated");
+        } else {
+            eventTwo.current.classList.remove("animated");
+
+        }
+    })
 
 
 
     return (
         <div className="Events">
-            <div className="events-1">
+            <div className="events-1" ref={eventTwo}>
                 <h2>Upcoming Events</h2>
                <br /> 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, at sapiente. Aliquam praesentium natus amet quod rerum mollitia ullam quo?</p>

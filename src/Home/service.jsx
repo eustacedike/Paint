@@ -36,10 +36,12 @@ const services = [
             serve1.current.style.transform = "scale(1)";
             serve1.current.style.transform = "translateY(0%)";
             serve1.current.style.opacity = "1";
+            // serve1.current.style.display = "flex";
         } else {
             serve1.current.style.transform = "scale(0)";
             serve1.current.style.transform = "translateY(-100%)";
             serve1.current.style.opacity = "0";
+            // serve1.current.style.display = "none";
         }
         
         if ((window.innerHeight + window.pageYOffset) > (serve2.current.offsetTop+160)) {
