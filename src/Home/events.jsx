@@ -5,12 +5,12 @@ import { useRef } from 'react';
 
 import './home.css';
 
-import pink from '../Images/pinksplash.png';
-import purple from '../Images/purplesplash.png';
-import orange from '../Images/orangesplash.png';
-import multiple from '../Images/multiplesplash.png';
+import event1 from '../Images/event1.jpg';
+import event2 from '../Images/event2.jpg';
+import event3 from '../Images/event3.jpg';
+import event4 from '../Images/event4.jpg';
 
-import room from "../Images/room.jpg";
+// import room from "../Images/room.jpg";
 
 
 
@@ -24,10 +24,10 @@ function Events() {
     const eventTwo = useRef();
 
     const comingEvents = [
-        { title: "Paint-A-Thon", image: room, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
-        { title: "Splaaash", image: multiple, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
-        { title: "Holiday Special", image: room, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
-        { title: "Paint Ball", image: purple, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
+        { title: "Paint-A-Thon", image: event4, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
+        { title: "Splaaash", image: event1, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
+        { title: "Holiday Special", image: event3, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
+        { title: "Paint Ball", image: event2, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
 
     ]
 

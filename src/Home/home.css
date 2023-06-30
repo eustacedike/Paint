@@ -46,6 +46,7 @@
     width: 100%;
 }
 
+
 .Advert {
     display: flex;
     justify-content: space-between;
@@ -261,7 +262,7 @@
 .gallery-2 {
     /* background: url(../Images/pinksplash.png); */
     /* height: 400px; */
-    /* background: url(../Images/bird.png); */
+    /* background: #3986C4,url(../Images/bird.png); */
     background-color: #3986C4;
     /* border: 1px solid red; */
     padding-right: 4vw;

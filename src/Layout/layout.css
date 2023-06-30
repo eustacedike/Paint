@@ -178,6 +178,105 @@ nav button:hover, .mobile button:hover {
     background-color: navy;
 }
 
+
+
+.Footer {
+    height: 400px;
+    background: url(../Images/footerbg.PNG),url(../Images/footerbg1.PNG);
+    margin: 50px 0;
+    padding: 10px 0;
+    padding-top: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    background-position: top, bottom;
+    /* border: 1px solid red; */
+    color: white;
+}
+
+footer {
+    /* background-color: #002b98; */
+    padding: 0px 4vw;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-1 ul {
+    max-width: 27%;
+}
+
+.footer-1 li {
+    list-style: none;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.footer-1 li .link {
+    font-weight: 400;
+}
+.footer-1 li .link:hover {
+    color: var(--secondary);
+}
+
+.footer-1 input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: "Fredoka", sans-serif;
+width: 70%;
+}
+
+.footer-1 button {
+    color: white;
+    background-color: var(--primary);
+    font-weight: 700;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: .5s;
+    cursor: pointer;
+   
+    font-family: "Fredoka", sans-serif;
+
+}
+
+.footer-1 button:hover {
+    background-color: var(--secondary);
+}
+
+footer hr {
+    margin: 20px 0;
+    border: 1px solid lightgray;
+}
+
+.footer-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-2 div {
+    width: 25%;
+    min-width: 200px;
+    margin-bottom: 25px;
+}
+
+.footer-2 h3 {
+    color: aqua;
+}
+
+.Footer p {
+    color: black;
+    text-align: center;
+}
+
 @media (max-width: 1000px) {
 
     .logo {
@@ -204,7 +303,37 @@ nav button:hover, .mobile button:hover {
     nav button {
         font-size: 16px;
     }
+
+    
+    .Footer {
+        height: fit-content;
+    }
+
+    footer {
+        background-color: #002b98;
+        /* padding: 0px 4vw; */
+    }
+
+    .footer-1 ul {
+        width: 30%;
+        min-width: 150px;
+        margin-bottom: 20px;
+        max-width: none;
+        /* border: 2px solid red; */
+    }
+
+    .footer-1 ul:nth-child(1),.footer-1 ul:nth-child(3) {
+        width: 60%;
+        min-width: 300px;
+        /* background-color: red; */
+    }
+
+    .log {
+        display: none;
+    }
+
 }
+
 
 @media (max-width: 540px) {
 
@@ -246,6 +375,20 @@ nav button:hover, .mobile button:hover {
 
         font-size: 16px;
 
+    }
+
+    .footer-1 ul {
+        width: 45%;
+        min-width: 45%;
+        /* margin-bottom: 20px; */
+        /* max-width: none; */
+        /* border: 2px solid red; */
+    }
+
+    .footer-1 ul:nth-child(1),.footer-1 ul:nth-child(3) {
+        max-width: 50%;
+        min-width: 50%;
+        /* background-color: red; */
     }
 }
 
