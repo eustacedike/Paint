@@ -13,6 +13,11 @@
 
 }
 
+.G-Head {
+    background: var(--primary);
+    height: 250px;
+}
+
 .mobile {
     background-color: rgba(0,0,0, 0.7);
     height: 100%;
@@ -26,6 +31,7 @@
     font-family: "Fredoka", sans-serif;
     font-weight: 600;
     transition: .7s;
+    z-index: 11;
     /* transform: translateX(-100%); */
 }
 
@@ -133,6 +139,21 @@ nav button:hover, .mobile button:hover {
 .grid {
     display: none;
     padding: 8px 10px;
+}
+
+.G-Head .outer-banner {
+    display: none;
+}
+
+.G-topic {
+    color: white;
+    text-align: center;
+    font-size: var(--h1-font);
+    display: none;
+}
+
+.G-Head .G-topic {
+    display: block;
 }
 
 .outer-banner {

@@ -18,7 +18,7 @@ function Home() {
       <Advert/>
       <Benefits/>
       <Events/>
-      <Gallery/>
+      {/* <Gallery/> */}
       <Subscribe/>
     </div>
   );
