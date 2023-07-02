@@ -24,7 +24,7 @@ function Footer() {
           </ul>
           <ul>
             <li><h2>Useful Links</h2></li> <br />
-            <li><Link className='link' to="/home">Home</Link></li>
+            <li><Link className='link' to="/">Home</Link></li>
             <li><Link className='link' to="/home">Contact Us</Link></li>
             <li><Link className='link' to="/home">Get Started</Link></li>
             <li><Link className='link' to="/home">About Us</Link></li>
