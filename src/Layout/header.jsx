@@ -40,11 +40,11 @@ function Header() {
             <h2 className='close' onClick={()=>setMenu(!menu)}>&#10006;</h2> <br /> <br />
                         <ul>
                             <li><Link className='link' to="/">HOME</Link></li>
-                            <li><Link className='link' to="/home">ABOUT</Link></li>
-                            <li><Link className='link' to="/home">SERVICES</Link></li>
+                            <li><Link className='link' to="/home">EVENTS</Link></li>
+                            {/* <li><Link className='link' to="/home">SERVICES</Link></li> */}
                             <li><Link className='link' to="/gallery">GALLERY</Link></li>
-                            <li><Link className='link' to="/home">TEAM</Link></li>
-                            <button className='quote'>GET A QUOTE</button>
+                            <li><Link className='link' to="/home">ABOUT US</Link></li>
+                            <button className='quote'>HOST WITH US</button>
                         </ul>
                   
             </div>
@@ -57,12 +57,12 @@ function Header() {
                     <nav>
                         <ul>
                             <li><Link className='link' to="/">HOME</Link></li>
-                            <li><Link className='link' to="/home">ABOUT</Link></li>
-                            <li><Link className='link' to="/home">SERVICES</Link></li>
+                            <li><Link className='link' to="/home">EVENTS</Link></li>
+                            {/* <li><Link className='link' to="/home">SERVICES</Link></li> */}
                             <li><Link className='link' to="/gallery">GALLERY</Link></li>
-                            <li><Link className='link' to="/home">TEAM</Link></li>
+                            <li><Link className='link' to="/home">ABOUT US</Link></li>
                             <button className='grid' onClick={()=>setMenu(!menu)}><BsUiChecksGrid/></button>
-                            <button className='quote'>GET A QUOTE</button>
+                            <button className='quote'>HOST WITH US</button>
                         </ul>
                     </nav>
 

@@ -5,7 +5,7 @@ import Service from './service';
 import Advert from './advert';
 import Benefits from './benefits';
 import Events from './events';
-import Gallery from './gallery';
+import Products from './products';
 import Subscribe from './subscribe';
 
 
@@ -18,7 +18,7 @@ function Home() {
       <Advert/>
       <Benefits/>
       <Events/>
-      {/* <Gallery/> */}
+      <Products/>
       <Subscribe/>
     </div>
   );
