@@ -7,7 +7,7 @@
     height: 600px;
     padding-top: 30px;
 
-    background: url(../Images/colors.png), var(--primary);
+    background: url(../Images/colors-min.png), var(--primary);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -285,8 +285,8 @@ footer hr {
 }
 
 .footer-2 div {
-    width: 25%;
-    min-width: 200px;
+    /* width: 25%; */
+    /* min-width: 200px; */
     margin-bottom: 25px;
 }
 

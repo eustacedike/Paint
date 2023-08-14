@@ -5,22 +5,22 @@ import { useState } from "react";
 import "./gallery.css";
 
 
-import IMG1 from '../Images/IMG1.jpg';
-import IMG2 from '../Images/IMG2.jpg';
-import IMG3 from '../Images/IMG3.jpg';
-import IMG4 from '../Images/IMG4.jpg';
-import IMG5 from '../Images/IMG5.jpg';
-import IMG6 from '../Images/IMG6.jpg';
-import IMG7 from '../Images/IMG7.jpg';
-import IMG8 from '../Images/IMG8.jpg';
+import IMG1 from '../Images/IMG1-min.jpg';
+import IMG2 from '../Images/IMG2-min.jpg';
+import IMG3 from '../Images/IMG3-min.jpg';
+import IMG4 from '../Images/IMG4-min.jpg';
+import IMG5 from '../Images/IMG5-min.jpg';
+import IMG6 from '../Images/IMG6-min.jpg';
+import IMG7 from '../Images/IMG7-min.jpg';
+import IMG8 from '../Images/IMG8-min.jpg';
 import IMG9 from '../Images/IMG9.jpg';
-import IMG10 from '../Images/IMG10.jpg';
-import IMG11 from '../Images/IMG11.jpg';
+import IMG10 from '../Images/IMG10-min.jpg';
+import IMG11 from '../Images/IMG11-min.jpg';
 import IMG12 from '../Images/IMG12.jpg';
 import IMG13 from '../Images/IMG13.jpg';
 import IMG14 from '../Images/IMG14.jpg';
-import IMG15 from '../Images/IMG15.jpg';
-import IMG16 from '../Images/IMG16.jpg';
+import IMG15 from '../Images/IMG15-min.jpg';
+import IMG16 from '../Images/IMG16-min.jpg';
 
 import gall1 from '../Images/gall1.jpg';
 import gall2 from '../Images/gall2.jpg';
@@ -33,13 +33,13 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
 const Albums = [
-    { title: "School Event", caption: "Children's event at High school", photos: [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6,IMG7, IMG8, IMG9, IMG9, IMG10, IMG11, IMG12, IMG13, IMG14, IMG15, IMG16] },
-    { title: "House Event", caption: "Children's event at High school", photos: [IMG5, IMG6,IMG7, IMG8, IMG9, IMG9, IMG10, IMG11, IMG12, IMG13, IMG14, IMG15] },
-    { title: "House Event", caption: "Children's event at High school", photos: [IMG3, IMG4, IMG5, IMG6,IMG7, IMG8, IMG9, IMG9, gall2, gall3, gall1, gall4, gall5, gall6] },
+    { title: "School Event", caption: "Children's event at High school", photos: [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6,IMG7, IMG8, IMG10, IMG11, IMG15, IMG16] },
+    { title: "House Event", caption: "Children's event at High school", photos: [IMG5, IMG6,IMG7, IMG8, IMG10, IMG11, IMG15, IMG16] },
+    { title: "House Event", caption: "Children's event at High school", photos: [IMG3, IMG4, IMG5, IMG6,IMG7, IMG8, gall2, gall3, gall1, gall4, gall5, gall6] },
     { title: "Church Event", caption: "Children's event at High school", photos: [gall3, gall1, gall2, gall4, gall5, gall6] },
-    { title: "School Event", caption: "Children's event at High school", photos: [IMG9, IMG10, IMG11, IMG12, IMG13, IMG14, IMG15, IMG16] },
+    // { title: "School Event", caption: "Children's event at High school", photos: [IMG9, IMG10, IMG11, IMG12, IMG13, IMG14, IMG15, IMG16] },
     { title: "House Event", caption: "Children's event at High school", photos: [gall2, gall3, gall1, gall4, gall5, gall6, gall2, gall3, gall1, gall4, gall5, gall6] },
-    { title: "Church Event", caption: "Children's event at High school", photos: [IMG4, IMG5, IMG6,IMG7, IMG8, IMG9, IMG9, IMG10, IMG11, IMG12] }
+    { title: "Church Event", caption: "Children's event at High school", photos: [IMG4, IMG5, IMG6,IMG7, IMG8, IMG2, IMG10, IMG11, IMG16] }
 ]
 
 
@@ -100,7 +100,7 @@ const previous = () => {
 
 
             <div className="album-display" style={{ transform: albumDisplay === -1 ? "scale(0) translateY(-50%)" : "scale(1) translateY(-50%)" }}>
-                <h2 className='close-album' onClick={() => setAlbumDisplay(-1)}>&#10006;</h2>
+                <p className='close-album' onClick={() => setAlbumDisplay(-1)}><FaChevronLeft/> &nbsp; Back</p>
 
                 {
                     Albums[albumDisplay]?.photos.map(photo => {

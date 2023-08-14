@@ -281,7 +281,7 @@
 }
 
 .Subscribe {
-    background: linear-gradient(rgb(0,0,0,0.15),rgb(0,0,0,0.15)),url(../Images/bus.png);
+    background: linear-gradient(rgb(0,0,0,0.15),rgb(0,0,0,0.15)),url(../Images/bus-min.png);
     /* padding: 60px 1vw; */
     height: 600px;
     background-size: cover;

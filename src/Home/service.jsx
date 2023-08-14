@@ -5,10 +5,10 @@ import { useRef } from 'react';
 
 import './home.css';
 
-import interior from '../Images/interior.png';
-import leisure from '../Images/leisure.jpg';
-import grafitti from '../Images/grafitti.png';
-import splash from '../Images/multiplesplash.png';
+import BOTTLE from '../Images/IMG5-min.jpg';
+import WOOD from '../Images/IMG5-min.jpg';
+import CERAMIC from '../Images/IMG5-min.jpg';
+import FABRIC from '../Images/IMG5-min.jpg';
 
 
 
@@ -24,10 +24,10 @@ const serve3 = useRef();
 const serve4 = useRef();
 
 const services = [
-        { title: "Interior Painting", image: interior, theref: serve1, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
-        { title: "Color Splash", image: splash, theref: serve2,  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
-        { title: "Grafitti", image: grafitti, theref: serve3, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
-        { title: "Leisure Painting", image: leisure, theref: serve4, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
+        { title: "Ceramic Painting", image: CERAMIC, theref: serve1, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
+        { title: "Unfinished Wood", image: WOOD, theref: serve2,  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
+        { title: "Bottle Artistry", image: BOTTLE, theref: serve3, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
+        { title: "Fabric Painting", image: FABRIC, theref: serve4, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, possimus minus enim error libero ullam?" },
 
     ]
 

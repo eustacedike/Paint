@@ -5,10 +5,10 @@ import { useRef } from 'react';
 
 import './home.css';
 
-import event1 from '../Images/event1.jpg';
-import event2 from '../Images/event2.jpg';
-import event3 from '../Images/event3.jpg';
-import event4 from '../Images/event4.jpg';
+import event1 from '../Images/gall1.jpg';
+import event2 from '../Images/gall2.jpg';
+import event3 from '../Images/gall3.jpg';
+import event4 from '../Images/gall4.jpg';
 
 // import room from "../Images/room.jpg";
 
