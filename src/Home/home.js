@@ -16,7 +16,7 @@ function Home() {
       
       <Service/>
       <Advert/>
-      <Benefits/>
+      {/* <Benefits/> */}
       <Events/>
       <Products/>
       <Subscribe/>

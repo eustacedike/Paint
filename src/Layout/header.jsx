@@ -39,12 +39,12 @@ function Header() {
             <div className="mobile" style={{transform: menu? "translateX(0%)":"translateX(-100%)"}}>
             <h2 className='close' onClick={()=>setMenu(!menu)}>&#10006;</h2> <br /> <br />
                         <ul>
-                            <li><Link className='link' to="/">HOME</Link></li>
-                            <li><Link className='link' to="/home">EVENTS</Link></li>
+                            <li><Link className='link' onClick={()=>setMenu(false)} to="/">HOME</Link></li>
+                            <li><Link className='link' to="/home" onClick={()=>setMenu(false)}>EVENTS</Link></li>
                             {/* <li><Link className='link' to="/home">SERVICES</Link></li> */}
-                            <li><Link className='link' to="/gallery">GALLERY</Link></li>
-                            <li><Link className='link' to="/home">ABOUT US</Link></li>
-                            <button className='quote'>HOST WITH US</button>
+                            <li><Link className='link' to="/gallery" onClick={()=>setMenu(false)}>GALLERY</Link></li>
+                            <li><Link className='link' to="/home" onClick={()=>setMenu(false)}>ABOUT US</Link></li>
+                            <button className='quote' onClick={()=>setMenu(false)}>HOST WITH US</button>
                         </ul>
                   
             </div>

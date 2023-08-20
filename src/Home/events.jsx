@@ -33,7 +33,7 @@ function Events() {
 
 
     window.addEventListener('scroll', ()=>{
-        if ((window.innerHeight + window.pageYOffset) > (eventTwo.current.offsetTop+160)) {
+        if ((window.innerHeight + window.pageYOffset) > (eventTwo.current.offsetTop)) {
             eventTwo.current.classList.add("animated");
         } else {
             eventTwo.current.classList.remove("animated");

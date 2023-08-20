@@ -281,10 +281,12 @@
 }
 
 .Subscribe {
-    background: linear-gradient(rgb(0,0,0,0.15),rgb(0,0,0,0.15)),url(../Images/bus-min.png);
+    /* background: linear-gradient(rgb(0,0,0,0.15),rgb(0,0,0,0.15)),url(../Images/bus-min.png); */
+    background: url(../Images/bus-min.png);
+
     /* padding: 60px 1vw; */
     height: 600px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     /* max-width: 1200px; */

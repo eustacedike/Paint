@@ -4,6 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
+import { useState } from 'react';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
 import product1 from '../Images/product1.jpg';
@@ -46,7 +48,25 @@ function Products() {
         { image: product12, legend: "Fair Package" },
         { image: product13, legend: "Fair Package" },
         
-    ]
+    ];
+
+    const [inView, setInView] = useState(1);
+
+    const next = () => {
+        if (galleryPics.length == inView + 1){
+            setInView(0)
+        } else {
+            setInView(inView + 1)
+        }
+    }
+    
+    const previous = () => {
+        if (inView == 0){
+            setInView(galleryPics.length - 1)
+        } else {
+            setInView(inView - 1)
+        }
+    }
 
 
     return (
@@ -54,7 +74,7 @@ function Products() {
 
 <div className="gallery-1">
 
-            <Carousel id="maxi">
+            {/* <Carousel id="maxi">
 
                 {
                     galleryPics.map(photo => {
@@ -68,7 +88,23 @@ function Products() {
                 }
 
 
-            </Carousel>
+            </Carousel> */}
+
+            <div className="" >
+                {/* <h2 className='close-album' onClick={() => setPhotoDisplay(-1)}>&#10006;</h2> */}
+
+                {
+  
+                            <img src={galleryPics[inView].image} />
+
+                }
+
+                <div className="next" onClick={next}><FaChevronRight/></div>
+                <div className="previous" onClick={previous}><FaChevronLeft/></div>
+                {/* <div className="position"><b>{photoDisplay + 1}</b></div> */}
+
+            </div>
+
             
 </div>
 <div className="gallery-2">

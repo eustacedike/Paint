@@ -1,6 +1,8 @@
 // import PhotoAlbum from "react-photo-album";
 
-import { useState } from "react";
+// import axios from "axios";
+
+import { useState, useEffect } from "react";
 
 import "./gallery.css";
 
@@ -32,6 +34,7 @@ import gall6 from '../Images/magic.jpg';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
+
 const Albums = [
     { title: "School Event", caption: "Children's event at High school", photos: [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6,IMG7, IMG8, IMG10, IMG11, IMG15, IMG16] },
     { title: "House Event", caption: "Children's event at High school", photos: [IMG5, IMG6,IMG7, IMG8, IMG10, IMG11, IMG15, IMG16] },
@@ -47,6 +50,11 @@ const Albums = [
 
 function Gallery() {
 
+    // useEffect(()=> {
+    //     axios.get("https://photos.app.goo.gl/miUmr3r5fRQMUDY47")
+    //     .then((res)=> {console.log(res)});
+    //     }, [])
+        
 
     const [albumDisplay, setAlbumDisplay] = useState(-1);
     const [photoDisplay, setPhotoDisplay] = useState(-1);
