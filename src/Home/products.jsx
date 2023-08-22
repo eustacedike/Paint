@@ -90,17 +90,33 @@ function Products() {
 
             </Carousel> */}
 
-            <div className="" >
+            <div className="">
                 {/* <h2 className='close-album' onClick={() => setPhotoDisplay(-1)}>&#10006;</h2> */}
 
                 {
   
-                            <img src={galleryPics[inView].image} />
+                            <img src={galleryPics[inView].image} id="mini"/>
 
                 }
 
-                <div className="next" onClick={next}><FaChevronRight/></div>
-                <div className="previous" onClick={previous}><FaChevronLeft/></div>
+                <div className="thumbnails">
+                    {galleryPics.map(thumb => {
+                        return (
+                            <div id=''>
+                                <img
+                                src={thumb.image}
+                                className='thumb'
+                                style={{border: galleryPics.indexOf(thumb)+1 == inView? "4px solid orange" : "4px solid white"}}
+                                onClick={()=>{setInView(galleryPics.indexOf(thumb)+1)}}
+                                />
+                                {/* <p>{galleryPics.indexOf(thumb)}</p> */}
+                            </div>
+                        )
+                    })}
+                </div>
+
+                <div className="prd-nxt" onClick={next}><FaChevronRight/></div>
+                <div className="prd-prv" onClick={previous}><FaChevronLeft/></div>
                 {/* <div className="position"><b>{photoDisplay + 1}</b></div> */}
 
             </div>

@@ -1,250 +1,244 @@
-
-
 .Home {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .Service {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background: url(../Images/dotmultiple.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-size: cover; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: url(../Images/dotmultiple.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
 }
 
+.service-1 {
+  width: 18%;
+  box-shadow: 1px 1px 3px 0px grey;
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.7s;
+  margin-bottom: 40px;
 
-.service-1{
-    width: 18%;
-    box-shadow: 1px 1px 3px 0px grey;
-    border-radius: 4px;
-    padding: 16px;
-    text-align: center;
-    cursor: pointer;
-    transition: .7s;
-    margin-bottom: 40px;
-
-    background-color: rgb(255, 255, 255,0.99);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: "Fredoka", sans-serif;
+  background-color: rgb(255, 255, 255, 0.99);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Fredoka", sans-serif;
 }
 
-.service-1:hover{
-    transform: scale(1.1);
-    background-color: var(--secondary);
-    box-shadow: 0px 0px 10px 0px var(--secondary);
+.service-1:hover {
+  transform: scale(1.1);
+  background-color: var(--secondary);
+  box-shadow: 0px 0px 10px 0px var(--secondary);
 }
 
 .service-1 h3 {
-    color: navy;
+  color: navy;
 }
 
 .service-1 img {
-    width: 100%;
+  width: 100%;
 }
-
 
 .Advert {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 5vw;
-    margin-top: 70px;
-    font-family: "Fredoka", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 5vw;
+  margin-top: 70px;
+  font-family: "Fredoka", sans-serif;
 }
 
-.advert-1{
-    width: 35%;
-    transition: .8s;
+.advert-1 {
+  width: 35%;
+  transition: 0.8s;
 }
 
 .advert-1 img {
-    width: 100%;
-    border-radius: 4px;
+  width: 100%;
+  border-radius: 4px;
 }
 
-.advert-2{
-    width: 60%;
+.advert-2 {
+  width: 60%;
 }
 
-.advert-2 h2{
-    color: navy;
-    font-size: var(--h2-font);
+.advert-2 h2 {
+  color: navy;
+  font-size: var(--h2-font);
 }
 
-.advert-2 p{
-    font-size: var(--p-font);
+.advert-2 p {
+  font-size: var(--p-font);
 }
 
 .advert-2 button {
-        color: white;
-        background-color: var(--primary);
-        font-weight: 700;
-        padding: 8px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: var(--p-font);
-        transition: .5s;
-        cursor: pointer;
-        margin: 20px 0;
-        font-family: "Fredoka", sans-serif;
-    
-    }
-    
-    .advert-2 button:hover {
-        background-color: var(--secondary);
-    }
+  color: white;
+  background-color: var(--primary);
+  font-weight: 700;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: var(--p-font);
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 20px 0;
+  font-family: "Fredoka", sans-serif;
+}
 
+.advert-2 button:hover {
+  background-color: var(--secondary);
+}
 
 .Benefits {
-    background: linear-gradient(rgb(255, 165, 0,0.85),rgb(255, 165, 0,0.85)),url(../Images/kid.jpg);
-    color: white;
-    background-size: contain;
-    padding: 30px 4vw;
+  background: linear-gradient(rgb(255, 165, 0, 0.85), rgb(255, 165, 0, 0.85)),
+    url(../Images/kid.jpg);
+  color: white;
+  background-size: contain;
+  padding: 30px 4vw;
 }
 
 .Benefits h2 {
-    /* color: navy; */
-    font-size: var(--h2-font);
-    text-align: center;
-    margin-bottom: 15px;
+  /* color: navy; */
+  font-size: var(--h2-font);
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-
-.benefits-1{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.benefits-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .benefit {
-    display: flex;
-    width: 45%;
-    margin-bottom: 20px;
+  display: flex;
+  width: 45%;
+  margin-bottom: 20px;
 }
 
 .benefit img {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
-.benefit p, .benefit h4, .events-1 p{
-    font-size: var(--p-font);
+.benefit p,
+.benefit h4,
+.events-1 p {
+  font-size: var(--p-font);
 }
 
 .Events {
-    margin-top: 40px;
-    padding: 30px 4vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-top: 40px;
+  padding: 30px 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.events-1{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.events-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.events-1 h2{
-    color: var(--secondary);
-    font-size: var(--h2-font);
+.events-1 h2 {
+  color: var(--secondary);
+  font-size: var(--h2-font);
 }
 
 .events-2 {
-    /* display: ; */
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  /* display: ; */
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .events-2 div {
-    height: 200px;
-    border-radius: 5px;
-    width: 45%;
-    box-shadow: 1px 1px 2px 0px grey;
-    margin-bottom: 25px;
-    overflow-y: hidden;
-    transition: 0.5s;
-    cursor: pointer;
-
+  height: 200px;
+  border-radius: 5px;
+  width: 45%;
+  box-shadow: 1px 1px 2px 0px grey;
+  margin-bottom: 25px;
+  overflow-y: hidden;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .animated div:nth-child(1) {
-    animation: outing .7s backwards ease-in-out;
-   }
+  animation: outing 0.7s backwards ease-in-out;
+}
 .animated div:nth-child(2) {
-    animation: outing .7s .7s backwards ease-in-out;
-   }
+  animation: outing 0.7s 0.7s backwards ease-in-out;
+}
 .animated div:nth-child(3) {
-    animation: outing .7s 1.4s backwards ease-in-out;
-   }
+  animation: outing 0.7s 1.4s backwards ease-in-out;
+}
 .animated div:nth-child(4) {
-    animation: outing .7s 2.1s backwards ease-in-out;
-   }
+  animation: outing 0.7s 2.1s backwards ease-in-out;
+}
 
 .events-2 div:nth-child(1) {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .events-2 div:nth-child(3) {
-    margin-top: 25px;
+  margin-top: 25px;
 }
-
 
 .events-2 div:hover {
-    transform: scale(1.09);
-    box-shadow: 0px 0px 5px 0px var(--secondary);
-
+  transform: scale(1.09);
+  box-shadow: 0px 0px 5px 0px var(--secondary);
 }
 
-.events-2 img{
-    object-fit: cover;
-    width: 100%;
+.events-2 img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .events-2 h4 {
-    /* margin-top: -150px; */
-    background-color: var(--secondary);
-    color: white;
-    padding: 2px 3px;
+  /* margin-top: -150px; */
+  background-color: var(--secondary);
+  color: white;
+  padding: 2px 3px;
 }
 
 .Events button {
-    color: white;
-        background-color: var(--secondary);
-        font-weight: 700;
-        padding: 8px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: var(--p-font);
-        transition: .5s;
-        cursor: pointer;
-        margin: 20px 0;
-        font-family: "Fredoka", sans-serif;
+  color: white;
+  background-color: var(--secondary);
+  font-weight: 700;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: var(--p-font);
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 20px 0;
+  font-family: "Fredoka", sans-serif;
 }
 
 .Gallery {
-    display: flex;
-    padding: 80px 0;
-    background: url(../Images/roller.png), url(../Images/roller.png);
+  display: flex;
+  padding: 80px 0;
+  background: url(../Images/roller.png), url(../Images/roller.png);
   background-repeat: no-repeat;
-    background-size: 170% auto;
-    background-position: 50% -2vw, 50% 450px;
-    /* background-color: rgb(245, 42, 133, 0.55); */
-    /* background-size: contain; */
-    margin-top: 40px;
-/* border: 1px solid red; */
+  background-size: 170% auto;
+  background-position: 50% -2vw, 50% 450px;
+  /* background-color: rgb(245, 42, 133, 0.55); */
+  /* background-size: contain; */
+  margin-top: 40px;
+  /* border: 1px solid red; */
 }
 
 .gallery-1 {
-    width: 50%;
-    background-color: #3986C4;
-    /* border: 1px solid red; */
-    padding-left: 4vw;
+  width: 50%;
+  background-color: #3986c4;
+  /* border: 1px solid red; */
+  padding-left: 4vw;
+  /* max-width: 300px; */
 }
 
 /* #maxi {
@@ -253,221 +247,249 @@
 } */
 
 #mini {
-    /* max-width: 200px; */
-    max-height: 450px;
-    object-fit: cover;
-    object-position: top;
+  /* max-width: 300px; */
+  /* max-height: 450px; */
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.prd-nxt, .prd-prv {
+    /* z-index: 5; */
+    background-color: rgb(255, 255, 255,0.6);
+    position: absolute;
+    /* top: 50%; */
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.prd-nxt:hover, .prd-prv:hover {
+    background-color: rgb(255, 255, 255,0.95);
+}
+
+.prd-nxt {
+    right: 30px;
+}
+
+.prd-prv {
+    left: 30px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.thumb {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
 .gallery-2 {
-    /* background: url(../Images/pinksplash.png); */
-    /* height: 400px; */
-    /* background: #3986C4,url(../Images/bird.png); */
-    background-color: #3986C4;
-    /* border: 1px solid red; */
-    padding-right: 4vw;
-    width: 50%;
-    /* background-size: cover; */
-    padding: 0 50px;
-    color: white;
-    font-size: var(--p-font);
-    line-height: var(--p-line);
+  /* background: url(../Images/pinksplash.png); */
+  /* height: 400px; */
+  /* background: #3986C4,url(../Images/bird.png); */
+  background-color: #3986c4;
+  /* border: 1px solid red; */
+  padding-right: 4vw;
+  width: 50%;
+  /* background-size: cover; */
+  padding: 0 50px;
+  color: white;
+  font-size: var(--p-font);
+  line-height: var(--p-line);
 }
 
 .gallery-2 h1 {
-    color: var(--primary);
-    font-size: var(--h1-font);
-    margin-bottom: 8px;
+  color: var(--primary);
+  font-size: var(--h1-font);
+  margin-bottom: 8px;
 }
 
 .Subscribe {
-    /* background: linear-gradient(rgb(0,0,0,0.15),rgb(0,0,0,0.15)),url(../Images/bus-min.png); */
-    background: url(../Images/bus-min.png);
+  /* background: linear-gradient(rgb(0,0,0,0.15),rgb(0,0,0,0.15)),url(../Images/bus-min.png); */
+  background: url(../Images/bus-min.png);
 
-    /* padding: 60px 1vw; */
-    height: 600px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* max-width: 1200px; */
-    margin: 60px auto;
-    text-align: center;
-    justify-content: center;
-display: flex;
-flex-direction: column;
-color: white;
+  /* padding: 60px 1vw; */
+  height: 600px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* max-width: 1200px; */
+  margin: 60px auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 .Subscribe div {
-    background-color: rgb(0,0,0,0.8);
-    max-width: 1000px;
-    padding: 40px 20px;
-    margin: 0 auto;
+  background-color: rgb(0, 0, 0, 0.8);
+  max-width: 1000px;
+  padding: 40px 20px;
+  margin: 0 auto;
 }
 
 .Subscribe form {
-    display: flex;
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto;
-    /* height: 100%; */
-    justify-content: center;
-    /* border: 2px solid red; */
+  display: flex;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  /* height: 100%; */
+  justify-content: center;
+  /* border: 2px solid red; */
 }
 
 .Subscribe input {
-    background-color: white;
-    padding: 7.5px 5px;
-    font-size: 18px;
-    width: 80%;
-    border-radius: 3px 0 0 3px;
-    border: none;
+  background-color: white;
+  padding: 7.5px 5px;
+  font-size: 18px;
+  width: 80%;
+  border-radius: 3px 0 0 3px;
+  border: none;
 }
 
 .Subscribe button {
-    color: white;
-        background-color: var(--secondary);
-        font-weight: 700;
-        padding: 7px 20px;
-        border: none;
-        border-radius: 0 3px 3px 0;
-        font-size: 18px;
-        transition: .5s;
-        cursor: pointer;
-        /* margin: 20px 0; */
-        font-family: "Fredoka", sans-serif;
+  color: white;
+  background-color: var(--secondary);
+  font-weight: 700;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  font-size: 18px;
+  transition: 0.5s;
+  cursor: pointer;
+  /* margin: 20px 0; */
+  font-family: "Fredoka", sans-serif;
 }
 
 @media (max-width: 780px) {
+  .service-1 img {
+    width: 100px;
+  }
 
-    .service-1 img {
-        width: 100px;
-    }
+  .service-1 {
+    width: 40%;
+  }
 
-    .service-1 {
-        width: 40%;
+  .benefit {
+    width: 95%;
+  }
 
-    }
+  .events-1 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
-    .benefit {
-        width: 95%;
-    }
+  .events-2 {
+    width: 100%;
+  }
 
+  .Gallery {
+    display: flex;
+    padding: 50px 0;
+    flex-wrap: wrap-reverse;
+    background-position: 50% -2vw, 50% bottom;
+  }
 
-    .events-1 {
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    
-    .events-2 {
-        width: 100%;
-    }
+  .gallery-1 {
+    width: 100%;
+    padding: 0 0;
+  }
 
-    .Gallery {
-        display: flex;
-        padding: 50px 0;
-        flex-wrap: wrap-reverse;
-        background-position: 50% -2vw, 50% bottom;
-        
-    }
-    
-    .gallery-1 {
-        width: 100%;
-        padding: 0 0;
-    }
-    
-    .gallery-2 {
-        width: 100%;
-        padding: 0 4vw;
-        padding-bottom: 20px;
-    }
-        
+  .gallery-2 {
+    width: 100%;
+    padding: 0 4vw;
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 540px) {
+  .service-1 img {
+    width: 100px;
+  }
 
-    .service-1 img {
-        width: 100px;
-    }
+  .service-1 {
+    width: 80%;
+  }
 
-    .service-1 {
-        width: 80%;
+  .Advert {
+    flex-wrap: wrap;
+  }
 
-    }
+  .advert-1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
-    .Advert {
-        flex-wrap: wrap;
-    }
-    
-    .advert-1{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    .advert-2{
-        width: 100%;
-    }
-    
+  .advert-2 {
+    width: 100%;
+  }
 
-    .events-2 div {
-        height: 130px;
-        border-radius: 5px;
-        width: 80%;
-        box-shadow: 1px 1px 2px 0px grey;
-        margin-bottom: 25px;
-        overflow-y: hidden;
-        transition: 0.5s;
-        cursor: pointer;
-    }
-    
-    .events-2 div:nth-child(1) {
-        margin-top: 0px;
-        margin-left: 20vw;
-    }
-    
-    .events-2 div:nth-child(3) {
-        margin-top: 0px;
-        margin-left: 20vw;
-    }
+  .events-2 div {
+    height: 130px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 1px 1px 2px 0px grey;
+    margin-bottom: 25px;
+    overflow-y: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
-    
-    
+  .events-2 div:nth-child(1) {
+    margin-top: 0px;
+    margin-left: 20vw;
+  }
 
-    .Subscribe form {
-        width: 93%;
-        /* height: 100%; */
-        /* border: 2px solid red; */
-    }
-    
-    .Subscribe input {
-        padding: 4px 2px;
-        font-size: 12px;
-        /* width: 80%; */
-    }
-    
-    .Subscribe button {
-        
-            padding: 4px 10px;
-            font-size: 12px;
-           
-    }
-    
+  .events-2 div:nth-child(3) {
+    margin-top: 0px;
+    margin-left: 20vw;
+  }
+
+  .Subscribe form {
+    width: 93%;
+    /* height: 100%; */
+    /* border: 2px solid red; */
+  }
+
+  .Subscribe input {
+    padding: 4px 2px;
+    font-size: 12px;
+    /* width: 80%; */
+  }
+
+  .Subscribe button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 1173px) {
-    .Gallery {
-        background-position: 50% -2vw, 50% 390px;
-        
-    }
+  .Gallery {
+    background-position: 50% -2vw, 50% 390px;
+  }
 }
 @media (min-width: 1388px) {
-    .Gallery {
-        background-position: 50% -2vw, 50% 350px;
-        
-    }
+  .Gallery {
+    background-position: 50% -2vw, 50% 350px;
+  }
 }
 
 @keyframes outing {
- from {transform: scale(0);}
- to {transform: scale(1);}   
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
