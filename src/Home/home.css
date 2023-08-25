@@ -223,11 +223,11 @@
 .Gallery {
   display: flex;
   padding: 80px 0;
-  background: url(../Images/roller.png), url(../Images/roller.png);
+  /* background: url(../Images/roller.png), url(../Images/roller.png); */
   background-repeat: no-repeat;
   background-size: 170% auto;
   background-position: 50% -2vw, 50% 450px;
-  /* background-color: rgb(245, 42, 133, 0.55); */
+  background-color: rgb(245, 42, 133, 0.55);
   /* background-size: contain; */
   margin-top: 40px;
   /* border: 1px solid red; */
@@ -235,7 +235,8 @@
 
 .gallery-1 {
   width: 50%;
-  background-color: #3986c4;
+  position: relative;
+  /* background-color: #3986c4; */
   /* border: 1px solid red; */
   padding-left: 4vw;
   /* max-width: 300px; */
@@ -250,54 +251,84 @@
   /* max-width: 300px; */
   /* max-height: 450px; */
   width: 100%;
+  max-height: 400px;
   object-fit: cover;
   object-position: top;
 }
 
-.prd-nxt, .prd-prv {
-    /* z-index: 5; */
-    background-color: rgb(255, 255, 255,0.6);
-    position: absolute;
-    /* top: 50%; */
-    cursor: pointer;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
+.capt {
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: white;
+  bottom: 80px;
+  width: 100%;
+  padding: 8px 0;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
 }
 
-.prd-nxt:hover, .prd-prv:hover {
-    background-color: rgb(255, 255, 255,0.95);
+.capt:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.prd-nxt,
+.prd-prv {
+  /* z-index: 5; */
+  background-color: rgb(255, 255, 255, 0.4);
+  position: absolute;
+  top: 25%;
+  cursor: pointer;
+  height: 200px;
+  width: 30px;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  color: rgb(245, 42, 133);
+}
+
+.prd-nxt:hover,
+.prd-prv:hover {
+  background-color: rgb(255, 255, 255, 0.9);
 }
 
 .prd-nxt {
-    right: 30px;
+  right: 0px;
 }
 
 .prd-prv {
-    left: 30px;
+  left: 4vw;
 }
 
 .thumbnails {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.thumbnails::-webkit-scrollbar{
+  display: none;
 }
 
 .thumb {
   height: 40px;
   width: 40px;
   cursor: pointer;
+  scroll-snap-align: start;
 }
 
 .gallery-2 {
   /* background: url(../Images/pinksplash.png); */
   /* height: 400px; */
   /* background: #3986C4,url(../Images/bird.png); */
-  background-color: #3986c4;
+  /* background-color: #3986c4; */
   /* border: 1px solid red; */
   padding-right: 4vw;
   width: 50%;
@@ -309,7 +340,7 @@
 }
 
 .gallery-2 h1 {
-  color: var(--primary);
+  color: white;
   font-size: var(--h1-font);
   margin-bottom: 8px;
 }
@@ -404,6 +435,10 @@
   .gallery-1 {
     width: 100%;
     padding: 0 0;
+  }
+
+  .prd-prv {
+    left: 0px;
   }
 
   .gallery-2 {
