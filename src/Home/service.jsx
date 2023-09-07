@@ -55,10 +55,13 @@ const services = [
             serve2.current.style.opacity = "0";
         }
         if ((window.innerHeight + window.pageYOffset) > (serve3.current.offsetTop+160)) {
-            
-            serve3.current.style.transform = "scale(1)";
-            serve3.current.style.transform = "translateY(0%)";
-            serve3.current.style.opacity = "1";
+            setTimeout( ()=>{
+                serve3.current.style.transform = "scale(1)";
+                serve3.current.style.transform = "translateY(0%)";
+                serve3.current.style.opacity = "1";},1000);
+            // serve3.current.style.transform = "scale(1)";
+            // serve3.current.style.transform = "translateY(0%)";
+            // serve3.current.style.opacity = "1";
         } else {
             serve3.current.style.transform = "scale(0)";
             serve3.current.style.transform = "translateY(100%)";
@@ -68,7 +71,7 @@ const services = [
             setTimeout( ()=>{
             serve4.current.style.transform = "scale(1)";
             serve4.current.style.transform = "translateY(0%)";
-            serve4.current.style.opacity = "1";},500);
+            serve4.current.style.opacity = "1";},1500);
         } else {
             serve4.current.style.transform = "scale(0)";
             serve4.current.style.transform = "translateY(100%)";

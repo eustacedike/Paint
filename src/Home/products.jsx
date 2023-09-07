@@ -48,7 +48,7 @@ function Products() {
   useEffect(() => {
     console.log(document.documentElement.clientWidth);
     console.log(thumbss.current.getBoundingClientRect());
-    console.log(galleryPics[12].image);
+    console.log(galleryPics.length);
   }, []);
 
   const scrolltoThumbIfNotVisible = (d) => {
@@ -69,7 +69,7 @@ function Products() {
   const [inView, setInView] = useState(1);
 
   const next = () => {
-    if (galleryPics.length == inView + 1) {
+    if (galleryPics.length == inView) {
       setInView(1);
       scrolltoThumbIfNotVisible(0);
     } else {
@@ -112,10 +112,9 @@ function Products() {
 
         <div className="">
           {/* <h2 className='close-album' onClick={() => setPhotoDisplay(-1)}>&#10006;</h2> */}
-
           {<img src={galleryPics[inView - 1].image} id="mini" />}
-          <p className="capt"> {galleryPics[inView - 1].legend} </p>
-
+          <p className="capt"> {galleryPics[inView - 1].legend} </p> <br />
+          <button className="shopn">Shop Now</button>
           <div className="thumbnails" ref={thumbss}>
             {galleryPics.map((thumb, i) => {
               return (
@@ -132,6 +131,7 @@ function Products() {
                     }}
                     onClick={() => {
                       setInView(galleryPics.indexOf(thumb) + 1);
+                      console.log(inView);
                     }}
                   />
                   {/* <button onClick={scrolltoThumbIfNotVisible}>tdfdx</button> */}
@@ -151,7 +151,6 @@ function Products() {
               );
             })}
           </div>
-
           <div className="prd-nxt" onClick={next}>
             <FaChevronRight />
           </div>
